@@ -13,7 +13,7 @@
 
 As we can see in the IDA dissasembly, the good path is the left basic block. We can see that there is two function called `sub_1150` and `sub_1203` then a comparaison is done between `rax` and `rcx` registers. Following the state of the flag register, we get printed the flag or the `Hack Plus Fort`
 
-![disass](dissasembly1.Png)
+![disass](dissasembly1.png)
 
 
 
