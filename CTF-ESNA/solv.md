@@ -101,8 +101,8 @@ ctx.setConcreteMemoryAreaValue(pc,obfu) # map the triton vm with the extracted f
 
 
 emulate(ctx,pc)
-rax = ctx.getSymbolicRegister(ctx.registers.rax) # rax 
-print(ctx.getModel(rax.getAst() == 0x7361626d79706168))
+rax = ctx.getSymbolicRegister(ctx.registers.rax) # Returns the symbolic expression assigned to rax
+print(ctx.getModel(rax.getAst() == 0x7361626d79706168)) # Computes and returns a model from a symbolic constraint.
 
 print(int("0x322053c49c8c75b4",base=16))
 ```
@@ -114,4 +114,5 @@ print(int("0x322053c49c8c75b4",base=16))
 
 
 
-- X86 Overlapping Instruction, and Mixed Boolean Arithmetic
+- x86 Overlapping Instruction
+- Mixed Boolean Arithmetic
