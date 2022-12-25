@@ -58,7 +58,7 @@ I will simply use Triton, [triton-library.github.io](triton-library.github.io).
 In the following script i've just extracted the function `sub_1230()`and mapping in the triton vm the extracted assembbly. 
 
 
-Since we know the input register `rdi` and the register that will contain the result of the function `rax`, We just need to symbolyze `rdi` and `rax`, following this, we just need to computes and returns a model from a symbolic constraint (here the 0x7361626d79706168)
+Since we know the input register `rdi` and the register that will contain the result of the function `rax`, We just need to symbolyze `rdi` and `rax`, following this, we just need to computes and returns a model from the symbolic constraint (here the 0x7361626d79706168)
 
 ```python
 import binascii
@@ -109,5 +109,9 @@ print(int("0x322053c49c8c75b4",base=16))
 
 
 
-## Obfuscation technique used in 
+## Obfuscation technique used 
 
+
+
+
+- X86 Overlapping Instruction, and Mixed Boolean Arithmetic
